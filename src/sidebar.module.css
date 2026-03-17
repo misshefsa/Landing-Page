@@ -1,0 +1,64 @@
+/* The main wrapper for the sidebar */
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-right: 2px solid #8a8787;
+    padding: 1rem;
+}
+
+.col {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5rem 0;
+    justify-content: center;
+}
+
+.logo img {
+    height: 34px;
+    object-fit: contain;
+}
+ul {
+    list-style: none;
+    font-size: 0.7rem;
+    /* FIX 1: Remove default browser spacing */
+    padding: 0; 
+    margin: 0;
+    
+    /* FIX 2: Ensure gap works by using flex */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center; 
+}
+
+/* If you are applying this class to the <ul> tag: */
+.menulist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    white-space: nowrap; /* Prevents text from wrapping to a second line */
+}
+.btn{
+   padding: 0.8rem 2rem;
+   font-size: 0.8rem;
+   width: 10rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.2rem;
+}
+@media screen and (max-width: 600px) {
+    ul{
+        display: none;
+    }
+}

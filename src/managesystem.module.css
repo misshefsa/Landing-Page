@@ -1,0 +1,21 @@
+.container{
+    background-color: black;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.col p{
+    text-align: center;
+    font: 0.7rem 'Poppins', sans-serif ;
+
+}
+.systemimg{
+   object-fit: contain;
+}
+.col h5{
+    font: 1rem 'Poppins', sans-serif ;
+    text-align: center;
+}
